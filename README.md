@@ -1,32 +1,26 @@
-<<<<<<< HEAD
 # Digicoin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+This is a basic example of blockchain cryptocurrency, whereby new blocks can be added to the chain with new data. A chain has already been created in the project with 1 existing block. More blocks with new data can be added (BlockChain Mining) to the chain. The data in the mined blocks can also be changed to see the disruption in the entire chain, which is why no change is  possible in actual blockchains once they are mined, making them tamper-proof.
 
-## Development server
+## Development 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The project has been made using Angular-CLI. To run this project locally, get `angular-cli` installed, then clone this repository and run `npm start`.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# digiCoin
-A blockchain based cryptocurrency.
->>>>>>> 6faca72d4f7e1c0bcde3fee7cd880e588b126c5f
+  `git clone https://github.com/gauravb12/digiCoin` <br/>
+  `cd digiCoin` <br/>
+  `npm install` <br/>
+  `npm start` <br/>
+  
+ Visit `http://localhost:4200/` in your browser to see the application running.
+ 
+ ## Screenshots
+ 
+ #### Initial First Block in the Chain
+ ![Initial First Block in the Chain](/screenshots/shot1.png)
+ 
+ #### Added one Block with new data
+ ![Added one Block with new data](/screenshots/shot2.png)
+ 
+ #### Changed Data of the first Block, entire chain tampered.
+ ![Changed Data of the first Block, entire chain tampered.](/screenshots/shot3.png)
+ 
