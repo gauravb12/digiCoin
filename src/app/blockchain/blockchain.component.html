@@ -1,0 +1,80 @@
+<div class="panel-group container">
+  <div class="main-head">DigiCoin.</div>
+  <div class="sub-head">This is a sample of blockchain cryptocurrency with initial 1 block. Use the form below to mine more blocks. Try changing data of the blocks, once they are mined, that would cause disruption in the entire chain.</div>
+  <br>
+<div *ngFor="let block of blocks">
+  <div class="panel panel-success" id="blck{{block.index}}">
+    <div class="panel-heading">
+      <form class="form-horizontal">
+        <div class="row">
+          <div class="col-sm-2 control-label form-nolabel" for="data">Data:</div>
+          <div class="col-sm-8"> 
+            <input class="form-control" id="data" name="data" (keyup)="checkBlock(block)" [(ngModel)]="block.data">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-2 form-nolabel"> Index: </div>
+        <div class="col-sm-8"> {{ block.index }} </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 form-nolabel"> Timestamp: </div>
+        <div class="col-sm-8"> {{ block.timestamp }} </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-2 form-nolabel"> Prev Hash: </div>
+        <div class="col-sm-8"> {{ block.prevHash }} </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 form-nolabel"> Hash: </div>
+        <div class="col-sm-8"> {{ block.hash }} </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+<div class="container">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="id">Index:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="id" name="id" [(ngModel)]="nBlock.index" disabled="true">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="time">Timestamp:</label>
+      <div class="col-sm-8"> 
+        <input type="text" class="form-control" id="time" [(ngModel)]="nBlock.timestamp" name="time" disabled="true">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="data">Data:</label>
+      <div class="col-sm-8"> 
+        <input type="text" class="form-control" id="data" [(ngModel)]="nBlock.data" name="data" (keyup)="calcHash()">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="prevHash">Prev Hash:</label>
+      <div class="col-sm-8"> 
+        <input type="text" class="form-control" id="prevHash" name="prevHash" [(ngModel)]="nBlock.prevHash" disabled="true">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="hash">Hash:</label>
+      <div class="col-sm-8"> 
+        <input type="text" class="form-control" id="hash" name="hash" [(ngModel)]="nBlock.hash" disabled="true">
+      </div>
+    </div>
+    <div class="form-group"> 
+      <div class="col-sm-offset-2 col-sm-8">
+        <button class="btn" (click)="addBlock()" [disabled]="incorrect">Mine</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+.container {
+	font-size: 2.3vh;
+	width: 60%;
+	margin-top: 2%;
+}
+
+.panel {
+	margin-bottom: 2%;
+}
+
+.main-head {
+	font-size: 4vh;
+	font-weight: bold;
+}
+
+.sub-head {
+	font-size: 2.5vh;
+}
+
+.form-nolabel {
+	text-align: right;
+	font-weight: bold;
+}
