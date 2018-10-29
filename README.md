@@ -1,6 +1,6 @@
 # Digicoin
 
-This is a basic example of blockchain cryptocurrency, whereby new blocks can be added to the chain with new data. A chain has already been created in the project with 1 existing block. More blocks with new data can be added (BlockChain Mining) to the chain. The data in the mined blocks can also be changed to see the disruption in the entire chain, which is why no change is  possible in actual blockchains once they are mined, making them tamper-proof.
+This is a basic example of blockchain cryptocurrency, whereby new blocks can be added to the chain with new data. A chain has already been created in the project with 1 existing block. More blocks with new data can be added (BlockChain Mining) to the chain. Complex mining and hashing has not been implemented yet, as this is a basic application. The data in the mined blocks can also be changed to see the disruption in the entire chain, which is why no change is  possible in actual blockchains once they are mined, making them tamper-proof.
 
 ## Development 
 
